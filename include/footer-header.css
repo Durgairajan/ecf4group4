@@ -1,2 +1,37 @@
-.header{text-align: center;
-         background-color: blue;}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+  }
+  
+  header {
+    background-color: blue;
+    width: 100%;
+  }
+  
+  .header {
+    text-align: center;
+    background-color: blue;
+    color: azure;
+    position: relative;
+    padding: 10px 0;
+  }
+  
+  nav {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  nav a {
+    color: black;
+    text-decoration: none; 
+    font-weight: bold;
+  }
+  
