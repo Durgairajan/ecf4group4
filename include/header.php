@@ -8,7 +8,7 @@
 <body> 
     <header> 
     <h1 class="header">Blog-Group 4</h1>
-        <h3>HOME</h3>
+        <h3 class="header">HOME</h3>  
         
     
     
