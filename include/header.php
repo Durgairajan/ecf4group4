@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="stylesheet" href="footer-header.css">
-    <title>Document</title>
-    </head>
-<body>
+
+<body> 
+    <!-- header.php -->
   <header>
     <div class="header">
       <nav>
@@ -14,6 +8,8 @@
       </nav>
       <h1>Blog - Group 4</h1>
     </div>
-  </header>
+  </header> 
+  <?php include("Include/Footer.php"); ?>
+
 </body>
 </html>
