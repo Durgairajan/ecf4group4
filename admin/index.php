@@ -1,6 +1,6 @@
 <?php
-include 'include/header.php';
-include 'include/config.php';
+include '../include/header.php';
+include '../include/config.php';
 session_start();
 
 if (!isset($_SESSION["admin"])) {
@@ -13,7 +13,13 @@ if (!isset($_SESSION["admin"])) {
     <h2 class="h2admin">Votre poste <a href="post.php"><small>Ajouter Blog</small></a></h2>
     <?php 
     try {
-        $stmt = $conn->query("SELECT * FROM articles ORDER BY Id_article DESC");
+        $stmt = $conn->query(          
+        "SELECT articles.*, categories.nomCategorie AS category_name, user.name AS author_name
+        FROM articles 
+        JOIN categories ON articles.id_categories = categories.Id_categorie
+        JOIN user ON articles.id_user = user.id
+        ORDER BY articles.id_article DESC"
+     );
         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
     ?>
         <div style="clear: both; margin-bottom: 50px;">
@@ -21,8 +27,9 @@ if (!isset($_SESSION["admin"])) {
                 <h3 style="color: blue; margin: 0px;">
                     <a href="../post.php?id=<?php echo $row['Id_article']; ?>" style="color: blue;"><?php echo htmlspecialchars($row['Titre']); ?></a>
                 </h3>
-                <small style="margin: 0px; background: blue; color: white; padding: 3px; font-size: 10px;">Category: <?php echo htmlspecialchars($row['id_categories']); ?></small>
+                <small style="margin: 0px; background: blue; color: white; padding: 3px; font-size: 10px;">Category: <?php echo htmlspecialchars($row['category_name']); ?></small>
                 <small style="margin: 0px; background: blue; color: white; padding: 3px; font-size: 10px;">Date: <?php echo htmlspecialchars($row["Date"]); ?></small>
+                <small class="article-author" style="margin: 0px; background: blue; color: white; padding: 3px; font-size: 10px;">Author: <?php echo htmlspecialchars($row["author_name"]); ?></small>
                 <p style="color: black;"><?php echo htmlspecialchars(substr($row['Contenu'], 0, 300)) . "..."; ?></p>
             </div>
             
@@ -41,4 +48,4 @@ if (!isset($_SESSION["admin"])) {
     ?>
 </div>
 
-<?php include 'include/footer.php'; ?>
+<?php include '../include/footer.php'; ?>
