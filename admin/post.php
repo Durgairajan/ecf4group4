@@ -5,18 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nouvel Article</title>
-    <link rel="stylesheet" href=".style/style_newarticle.css">
+    <link rel="stylesheet" href="../style/style_post.css">
 </head>
 
 <body>
-    <!-- Header non définitif -->
-    <header>
-        <a href="index.php">Accueil</a>
-        <p>Blog - Groupe 4</p>
-    </header>
+<!-- modif temp envoi -> envoi-test -->
+    <?php
+    include "../include/envoi.php";
+    include "../include/config.php";
+    include "../include/header.php"; ?>
+
     <h1>Nouvel article</article>
     </h1>
-    <form action="envoi.php" method="POST">
+
+<!-- modif temp envoi -> envoi-test -->
+    <form action="../include/envoi.php" method="POST">
         <!-- Structure de la page -->
         <label for="titre">Titre de l'article :</label>
         <input type="text" id="titre" name="titre" required>
@@ -31,7 +34,6 @@
             <option value="3">Cuisine</option>
 
             <!-- La "value" correspond à l'"id_categorie" -->
-            <!--  -->
         </select>
 
         <label for="article">Contenu :</label>
@@ -43,29 +45,8 @@
             <button class="annuler"><a href="index.php">Annuler</a></button>
         </div>
     </form>
+    <?php include "../include/footer.php" ?>
 
-    <!-- Footer non définitif -->
-    <footer>
-        <p>Copyright 2024 - Lucas, Mustapha, Rajan, Dan, Nanji.</p>
-    </footer>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<?php
-// include "envoi.php";
-include "include/config.php" ?>
