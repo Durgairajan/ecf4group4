@@ -1,4 +1,5 @@
 
+<link rel="stylesheet" href="style/footer-header.css">
 <body> 
     <!-- header.php -->
   <header>
