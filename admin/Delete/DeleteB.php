@@ -1,6 +1,6 @@
 <?php
-include '../include/header.php';
-include '../include/config.php';
+include '../../include/header.php';
+include '../../include/config.php';
 
 
 if (isset($_POST['delete'])) {
@@ -17,5 +17,5 @@ if (isset($_POST['delete'])) {
     }
 }
 
-include 'delete.html';
+include 'DeleteA.php';
 

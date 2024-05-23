@@ -1,6 +1,6 @@
 <?php
-include '../include/header.php';
-include '../include/config.php';
+include '../../include/header.php';
+include '../../include/config.php';
 ?>
 
 <!DOCTYPE html>
@@ -33,4 +33,4 @@ include '../include/config.php';
 </body>
 </html>
 
-<?php include '../include/footer.php'; ?>
+<?php include '../../include/footer.php'; ?>

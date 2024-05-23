@@ -1,6 +1,6 @@
 <?php
-include '../include/header.php';
-include '../include/config.php';
+include '../../include/header.php';
+include '../../include/config.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Traitement du formulaire de modification
@@ -44,4 +44,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         die("ID de l'article non spécifié.");
     }
 }
-include 'Edit.html';
+include 'EditA.php';

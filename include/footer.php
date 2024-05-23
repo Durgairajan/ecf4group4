@@ -1,6 +1,6 @@
-<!DOCTYPE html> 
-<link rel="stylesheet" href="style/footer-header.css">
-
+<meta>
+<link rel="stylesheet" href="../style/footer-header.css">
+</meta>
 <!-- Footer.php -->
 
 <footer>
@@ -20,6 +20,7 @@
 </footer>
 
 </html>
+
 
 
 

@@ -1,6 +1,6 @@
 <?php
-include '../include/header.php';
-include '../include/config.php';
+include '../../include/header.php';
+include '../../include/config.php';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -21,7 +21,7 @@ include '../include/config.php';
     }
     ?>
     
-    <form action="Edit.php" method="POST" >
+    <form action="EditB.php" method="POST" >
 <!--         <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>">
  -->    <label for="title">Titre:</label>
         <input type="text" id="titre" name="title" required>
@@ -40,7 +40,7 @@ include '../include/config.php';
     <button class="annuler"><a href="index.php">Annuler</a></button>
 </div>
 </form>
+<?php include '../../include/footer.php'; ?>
 </body>
 </html>
 
-<?php include '../include/footer.php'; ?>

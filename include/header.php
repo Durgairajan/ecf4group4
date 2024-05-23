@@ -1,5 +1,5 @@
 
-<link rel="stylesheet" href="style/footer-header.css">
+<link rel="stylesheet" href="../style/footer-header.css">
 <body> 
     <!-- header.php -->
   <header>
@@ -10,7 +10,6 @@
       <h1>Blog - Group 4</h1>
     </div>
   </header> 
-  <?php include("Include/Footer.php"); ?>
 
 </body>
 </html>
