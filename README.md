@@ -8,7 +8,11 @@ post_article.php
 view_article.php
 post_comment.php
 
+<<<<<<< HEAD
 22/05/2024 - Srcum meeting finailzed and development started.
+=======
+22/05/2024 - Scrum meeting finailzed and development started.
+>>>>>>> 48515ce37b34e94839c8a3a836203759237b3023
 —-----------------------------------
 Primary Task - Admin folder
 —-----------------------------------
@@ -35,6 +39,7 @@ Css
 Alignment 
 —----------------------------
 
+<<<<<<< HEAD
 config.php >>>> this file is used in all page .
 =======
 
@@ -52,3 +57,8 @@ view page delivered and css has been incorporated
 
 
 
+=======
+include/config.php >>>> this file is used in all pages .
+=======
+
+>>>>>>> 48515ce37b34e94839c8a3a836203759237b3023

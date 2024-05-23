@@ -1,5 +1,9 @@
 <?php
+<<<<<<< HEAD
 include "config.php";
+=======
+include "../include/config.php";
+>>>>>>> 48515ce37b34e94839c8a3a836203759237b3023
 
 // Check if the form was submitted
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -20,14 +24,24 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             // Execute the prepared statement with actual values
             $requete->execute([$contenu, $article, $date, $user]);
 
+<<<<<<< HEAD
             // Redirect to view.php after successful insertion
             header("Location: ../admin/view.php?id=$article");
             exit(); // Ensure no further code is executed
+=======
+            echo "Comment posted successfully!";
+>>>>>>> 48515ce37b34e94839c8a3a836203759237b3023
         } catch (PDOException $e) {
             echo "Error: " . $e->getMessage();
         }
     } else {
         echo "All fields are required.";
     }
+<<<<<<< HEAD
 }
 ?>
+=======
+} 
+
+?>
+>>>>>>> 48515ce37b34e94839c8a3a836203759237b3023

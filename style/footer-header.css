@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%; 
+    
+  }
+  
+  header {
+    background-color: blue;
+    width: 100%;
+  }
+  
+  .header {
+    text-align: center;
+    background-color: blue;
+    color: azure;
+    position: relative;
+    padding: 10px 0;
+  }
+  
+  nav {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  nav a {
+    color: black;
+    text-decoration: none; 
+    font-weight: bold;
+  }
+  footer {
+    background-color: white;
+    margin-top: 20px; /* Ajoute une marge en haut du footer */
+    margin-bottom: 20px; /* Ajoute une marge en bas du footer */
+    margin-left: auto; /* Aligne le footer à gauche */
+    margin-right: auto; /* Aligne le footer à droite */
+    width: 80%; /* Défini une largeur pour le footer */
+    padding: 10px; /* Ajoute un espacement interne au footer */ 
+    border: 1px solid;
+    border-color:black;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+  }
+  
+  header {
+    background-color: blue;
+    width: 100%;
+  }
+  
+  .header {
+    text-align: center;
+    background-color: blue;
+    color: azure;
+    position: relative;
+    padding: 10px 0;
+  }
+  
+  nav {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .protection-footer {
+    display: flex; 
+    justify-content: center; 
+    padding: 10px 0; 
+    border-top: 1px solid #000; 
+  }
+  
+  .protection-footer ul {
+    list-style: none; /* Supprime les puces de liste par défaut */
+    padding: 0; /* Supprime les marges internes par défaut */
+    display: flex; /* Affiche les éléments de la liste en ligne */
+  }
+  
+  .protection-footer ul li {
+    margin-right: 20px; /* Ajoute un espace entre les éléments de la liste */
+  }
+  
+  .protection-footer ul li:last-child {
+    margin-right: 0; /* Supprime la marge à droite du dernier élément de la liste */
+  }
+  
+  .protection-footer a {
+    color: rgb(217, 255, 0); /* Couleur des liens */
+    text-decoration: none; /* Supprime le soulignement par défaut */
+  }
+  
+
