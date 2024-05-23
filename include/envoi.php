@@ -21,7 +21,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             // Execute the prepared statement with actual values
             $requete->execute([$titre, $article, $id_user, $date, $categorie]);
 
-            echo "Article posted successfully!";
+            // Redirect to view.php after successful insertion
+            header("Location: ../admin/index.php?id=$article");
+            exit(); // Ensure no further code is executed
+            
         } catch (PDOException $e) {
             echo "Error: " . $e->getMessage();
         }

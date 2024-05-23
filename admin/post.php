@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nouvel Article</title>
-    <link rel="stylesheet" href="../style/style_post.css">
+    <link rel="stylesheet" href="../css/style_newarticle.css">
 </head>
 
 <body>
 <!-- modif temp envoi -> envoi-test -->
     <?php
     include "../include/envoi.php";
-    include "../include/config.php";
     include "../include/header.php"; ?>
 
     <h1>Nouvel article</article>
@@ -26,12 +25,26 @@
 
         <label for="categorie">Catégorie :</label>
         <select name="categorie" id="categorie" required>
-
-
-            <option value="">Choississez la catégorie</option>
-            <option value="1">Sport</option>
-            <option value="2">Voyage</option>
-            <option value="3">Cuisine</option>
+        <?php
+            if (isset($categories)) {
+                foreach ($categories as $row) {
+                    echo '<option value="' . $row['Id_categorie'] . '">' . $row['nomCategorie'] . '</option>';
+                }
+            }
+            ?>
+             </select><br>
+             <label for="user">Auteur</label>
+        <select id="user" name="user" required>
+            <?php
+            if (isset($users)) {
+                foreach ($users as $row) {
+                    echo '<option value="' . $row['id'] . '">' . $row['name'] . '</option>';
+                }
+            }
+            ?>
+        </select>
+        
+        
 
             <!-- La "value" correspond à l'"id_categorie" -->
         </select>
