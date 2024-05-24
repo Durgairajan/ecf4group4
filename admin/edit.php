@@ -85,7 +85,7 @@ try {
             ?>
         </select><br><br>
 
-        <input type="submit" value="Mise à jour ">
+        <input type="submit" class="envoyer" value="Mise à jour ">
         <br><br>
     </form>
 </body>
