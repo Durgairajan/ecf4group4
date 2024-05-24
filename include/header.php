@@ -13,7 +13,7 @@ include '../include/config.php';
     <header>
         <div class="header">
             <nav>
-                <a href="../admin/index.php">Home</a>
+                <a href="../admin/index.php">Accueil</a>
             </nav>
             <h1>ECF Blog - Group 4</h1>
         </div>

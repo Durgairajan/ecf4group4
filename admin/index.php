@@ -8,12 +8,12 @@ include '../include/config.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nouvel Article</title>
+    <title>Liste des articles</title>
     <link rel="stylesheet" href="../css/index.css">
 </head>
 
 <div class="more">
-    <h2 class="h2admin">Votre poste <a href="post.php"><small>Ajouter Blog</small></a></h2>
+    <h2 class="h2admin">Liste des posts <a href="post.php"><small>Ajouter post</small></a></h2>
     <?php 
     try {
         $stmt = $conn->query(          
@@ -30,16 +30,16 @@ include '../include/config.php';
                 <h3 style="color: #3883fc; margin: 0px;">
                     <a href="./view.php?id=<?php echo $row['Id_article']; ?>" style="color: #3883fc;"><?php echo htmlspecialchars($row['Titre']); ?></a>
                 </h3>
-                <small style="margin: 0px; background: #3883fc; color: white; padding: 3px; font-size: 10px;">Category: <?php echo htmlspecialchars($row['category_name']); ?></small>
-                <small style="margin: 0px; background: #3883fc; color: white; padding: 3px; font-size: 10px;">Date: <?php echo htmlspecialchars($row["Date"]); ?></small>
-                <small class="article-author" style="margin: 0px; background: #3883fc; color: white; padding: 3px; font-size: 10px;">Author: <?php echo htmlspecialchars($row["author_name"]); ?></small>
+                <small style="margin: 0px; background: #3883fc; color: white; padding: 3px; font-size: 10px;">Categories : <?php echo htmlspecialchars($row['category_name']); ?></small>
+                <small style="margin: 0px; background: #3883fc; color: white; padding: 3px; font-size: 10px;">Date : <?php echo htmlspecialchars($row["Date"]); ?></small>
+                <small class="article-author" style="margin: 0px; background: #3883fc; color: white; padding: 3px; font-size: 10px;">Auteur : <?php echo htmlspecialchars($row["author_name"]); ?></small>
                 <p style="color: black;"><?php echo htmlspecialchars(substr($row['Contenu'], 0, 300)) . "..."; ?></p>
             </div>
             
             <p style="font-family: calibri;">
-                <a style="background: #3883fc; padding: 5px; color: white; text-decoration: none;" href="./view.php?id=<?php echo $row['Id_article']; ?>">Read More</a>
-                <a style="background: #3883fc; padding: 5px; color: white; text-decoration: none;" href="edit.php?id=<?php echo $row['Id_article']; ?>">Edit Post</a>
-                <a style="background: #3883fc; padding: 5px; color: white; text-decoration: none;" href="delete.php?id=<?php echo $row['Id_article']; ?>">Delete</a>
+                <a style="background: #3883fc; padding: 5px; color: white; text-decoration: none;" href="./view.php?id=<?php echo $row['Id_article']; ?>">Voir plus</a>
+                <a style="background: #3883fc; padding: 5px; color: white; text-decoration: none;" href="edit.php?id=<?php echo $row['Id_article']; ?>">Editer le post</a>
+                <a style="background: #3883fc; padding: 5px; color: white; text-decoration: none;" href="delete.php?id=<?php echo $row['Id_article']; ?>">Supprimer</a>
             </p>
         </div>
         <br><hr><br>
