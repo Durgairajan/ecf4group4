@@ -1,13 +1,9 @@
 <?php
-<<<<<<< HEAD
 include "config.php";
-=======
-include "../include/config.php";
->>>>>>> 48515ce37b34e94839c8a3a836203759237b3023
 
-// Check if the form was submitted
+// verification si la methode utilisee est POST
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // Retrieve the data from the form
+    // Recuperations des infos du formulaire
     if (isset($_POST["contenu"], $_POST["article"], $_POST['user'])) {
         $user = $_POST['user'];
         $contenu = $_POST["contenu"];
@@ -15,33 +11,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $date = date('Y-m-d H:i:s');
 
         try {
-            // Prepare an SQL statement with placeholders
+            // Preparation de la requete SQL
             $requete = $conn->prepare(
                 'INSERT INTO commentaires (Contenu, id_article, Date, id_user) 
                 VALUES (?, ?, ?, ?)'
             );
 
-            // Execute the prepared statement with actual values
+            // Execution de la requete preparee
             $requete->execute([$contenu, $article, $date, $user]);
 
-<<<<<<< HEAD
-            // Redirect to view.php after successful insertion
+            // redicection vers view.php si tout est bon
             header("Location: ../admin/view.php?id=$article");
-            exit(); // Ensure no further code is executed
-=======
-            echo "Comment posted successfully!";
->>>>>>> 48515ce37b34e94839c8a3a836203759237b3023
+            exit(); // stop du code ici
         } catch (PDOException $e) {
-            echo "Error: " . $e->getMessage();
+            echo "Erreur : " . $e->getMessage();
         }
     } else {
-        echo "All fields are required.";
+        echo "Tous les champs requis ne sont pas remplis.";
     }
-<<<<<<< HEAD
 }
 ?>
-=======
-} 
-
-?>
->>>>>>> 48515ce37b34e94839c8a3a836203759237b3023
