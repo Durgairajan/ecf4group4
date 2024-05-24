@@ -39,26 +39,6 @@ Css
 Alignment 
 —----------------------------
 
-<<<<<<< HEAD
 config.php >>>> this file is used in all page .
-=======
 
-23/05/2024 - Version 1.0
-------------------------------------------------
-Index page fixed - with css
-view page delivered and css has been incorporated
---------------------------------------------------
-*****Important********
-1) config.php has been move to header.php
-2) color and css has been fixed for header and footer 
-3) we have separate css for header and footer to avoid conflicts with other members
-4) SQL db file has been uploaded with this version (contents inserted for testing purpose)
-5) Please everyone dont create lot of folders in remote repository 
-
-
-
-=======
-include/config.php >>>> this file is used in all pages .
-=======
-
->>>>>>> 48515ce37b34e94839c8a3a836203759237b3023
+Bug fixing done
