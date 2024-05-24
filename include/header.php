@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 include '../include/config.php';
 ?>
@@ -19,20 +18,3 @@ include '../include/config.php';
             <h1>ECF Blog - Group 4</h1>
         </div>
     </header>
-=======
-
-<link rel="stylesheet" href="../style/footer-header.css">
-<body> 
-    <!-- header.php -->
-  <header>
-    <div class="header">
-      <nav>
-        <a href="#">Home</a>
-      </nav>
-      <h1>Blog - Group 4</h1>
-    </div>
-  </header> 
-
-</body>
-</html>
->>>>>>> 48515ce37b34e94839c8a3a836203759237b3023
