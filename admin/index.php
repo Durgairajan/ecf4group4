@@ -1,13 +1,16 @@
 <?php
 include '../include/header.php';
 include '../include/config.php';
-session_start();
-
-if (!isset($_SESSION["admin"])) {
-    header("location: login.php");
-    exit;
-}
 ?>
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouvel Article</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
 
 <div class="more">
     <h2 class="h2admin">Votre poste <a href="post.php"><small>Ajouter Blog</small></a></h2>
