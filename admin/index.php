@@ -28,7 +28,7 @@ include '../include/config.php';
         <div style="clear: both; margin-bottom: 50px;">
             <div style="width: 100%;">
                 <h3 style="color: #3883fc; margin: 0px;">
-                    <a href="../view.php?id=<?php echo $row['Id_article']; ?>" style="color: #3883fc;"><?php echo htmlspecialchars($row['Titre']); ?></a>
+                    <a href="./view.php?id=<?php echo $row['Id_article']; ?>" style="color: #3883fc;"><?php echo htmlspecialchars($row['Titre']); ?></a>
                 </h3>
                 <small style="margin: 0px; background: #3883fc; color: white; padding: 3px; font-size: 10px;">Category: <?php echo htmlspecialchars($row['category_name']); ?></small>
                 <small style="margin: 0px; background: #3883fc; color: white; padding: 3px; font-size: 10px;">Date: <?php echo htmlspecialchars($row["Date"]); ?></small>
@@ -37,7 +37,7 @@ include '../include/config.php';
             </div>
             
             <p style="font-family: calibri;">
-                <a style="background: #3883fc; padding: 5px; color: white; text-decoration: none;" href="view.php?id=<?php echo $row['Id_article']; ?>">Read More</a>
+                <a style="background: #3883fc; padding: 5px; color: white; text-decoration: none;" href="./view.php?id=<?php echo $row['Id_article']; ?>">Read More</a>
                 <a style="background: #3883fc; padding: 5px; color: white; text-decoration: none;" href="edit.php?id=<?php echo $row['Id_article']; ?>">Edit Post</a>
                 <a style="background: #3883fc; padding: 5px; color: white; text-decoration: none;" href="delete.php?id=<?php echo $row['Id_article']; ?>">Delete</a>
             </p>
