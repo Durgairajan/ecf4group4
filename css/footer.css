@@ -1,9 +1,10 @@
 /* Footer Styles */
 footer {
-    background-color: #333; /* Dark background color */
+    background-color: #3883fc; /* Dark background color */
     color: white; /* Text color */
     padding: 20px; /* Padding around the content */
     text-align: center; /* Center align the content */
+    margin-top: 20px;
 }
 
 .footer-content {

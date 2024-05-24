@@ -50,7 +50,7 @@ try {
     <title></title>
 </head>
 <body>
-    <<h1>Modifier Article</article>
+    <h1>Modifier Article</article>
     </h1>
     <form action="edit.php" method="post">
         <input type="hidden" name="post_id" value="<?php echo htmlspecialchars($postId); ?>">
